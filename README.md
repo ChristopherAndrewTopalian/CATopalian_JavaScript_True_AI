@@ -1,6 +1,8 @@
 # CATopalian JavaScript True AI
 A JavaScript application that shows the 16 logic gates required to create True AI and teaches how the 16 logic gates relate to each other.  
 
+USE APP: https://christopherandrewtopalian.github.io/CATopalian_JavaScript_True_AI/CATopalian_JavaScript_True_AI.html
+
 If you enjoy my apps and tutorials please consider buying me a coffee at [paypal.me/keystonermarch](https://www.paypal.com/paypalme/keystonermarch)
 
 ---
