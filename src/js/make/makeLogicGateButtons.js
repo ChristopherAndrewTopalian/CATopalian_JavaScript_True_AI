@@ -6,8 +6,8 @@ function makeLogicGateButtons()
     logicButtonsDiv.id = "logicButtonsDiv";
     logicButtonsDiv.className = "logicButtonsDiv";
     logicButtonsDiv.style.position = 'absolute';
-    logicButtonsDiv.style.left = '217px';
-    logicButtonsDiv.style.top = '40px';
+    logicButtonsDiv.style.left = '180px';
+    logicButtonsDiv.style.top = '27px';
     logicButtonsDiv.style.width = '375px';
     ba(logicButtonsDiv);
 
@@ -22,13 +22,13 @@ function makeLogicGateButtons()
 
         logicGateButton.onclick = function()
         {
-            ge('sfx_blip_001').play();
+            clickSound();
             makeLogicCalculator(logic[x].name);
         };
 
         logicGateButton.onmouseover = function()
         {
-            ge('sfx_warp_001').play();
+            hoverSound();
         };
         logicButtonsDiv.append(logicGateButton);
     }

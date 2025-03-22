@@ -13,9 +13,9 @@ function makeTrueAiDiagram()
         trueAiDiagram.src = 'https://collegeofscripting.weebly.com/uploads/6/4/4/8/64482293/true-ai-by-christopher-topalian_orig.png';
     }
     trueAiDiagram.style.position = 'absolute';
-    trueAiDiagram.style.left = '598px';
-    trueAiDiagram.style.top = '40px';
-    trueAiDiagram.style.width = '400px';
+    trueAiDiagram.style.left = '560px';
+    trueAiDiagram.style.top = '33px';
+    trueAiDiagram.style.width = '370px';
     ba(trueAiDiagram);
 }
 

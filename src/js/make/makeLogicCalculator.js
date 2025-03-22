@@ -86,7 +86,7 @@ function makeLogicCalculator(whichItem)
     let textBoxResult = ce("textarea");
     textBoxResult.id = "textBoxResult";
     textBoxResult.placeholder = "Result";
-    textBoxResult.style.width = '200px';
+    textBoxResult.style.width = '150px';
     textBoxResult.onchange = function()
     {
         if (ge('textBoxResult').value == 0)
@@ -101,12 +101,12 @@ function makeLogicCalculator(whichItem)
     logicCalcDiv.append(textBoxResult);
 
     //-//
-    
+
     let truthTableAbbreviated = ce('div');
     truthTableAbbreviated.innerHTML = logic[findIndexByName(logic, whichItem)].truthTable;
     truthTableAbbreviated.id = 'truthTableAbbreviated';
     truthTableAbbreviated.style.position = 'absolute';
-    truthTableAbbreviated.style.left = '140px'
+    truthTableAbbreviated.style.left = '126px'
     truthTableAbbreviated.style.top = '40px';
     truthTableAbbreviated.style.color = 'rgb(150, 150, 150)';
     if (ge('truthTableAbbreviated'))
@@ -152,7 +152,7 @@ function makeLogicCalculator(whichItem)
     oppositeGate.innerHTML = 'Opposite Gate is: ' + logic[findIndexByName(logic, whichItem)].opposite;
     oppositeGate.id = 'oppositeGate';
     oppositeGate.style.position = 'absolute';
-    oppositeGate.style.left = '280px'
+    oppositeGate.style.left = '260px'
     oppositeGate.style.top = '3px';
     oppositeGate.style.color = 'rgb(100, 100, 100)';
     if (ge('oppositeGate'))
@@ -163,21 +163,49 @@ function makeLogicCalculator(whichItem)
 
     //-//
 
+    let index = findIndexByName(logic, whichItem);
+
+    //-//
+
     let topalianDiagram = ce('img');
     topalianDiagram.id = 'topalianDiagram';
     if (online == false)
     {
-        topalianDiagram.src = logic[findIndexByName(logic, whichItem)].imgSrcOffline;
+        topalianDiagram.src = logic[index].imgSrcOffline;
     }
     else
     {
-        topalianDiagram.src = logic[findIndexByName(logic, whichItem)].imgSrcOnline;
+        topalianDiagram.src = logic[index].imgSrcOnline;
     }
     topalianDiagram.style.position = 'absolute';
-    topalianDiagram.style.left = '458px';
-    topalianDiagram.style.top = '283px';
+    topalianDiagram.style.left = '435px';
+    topalianDiagram.style.top = '200px';
     topalianDiagram.style.width = '115px';
     ba(topalianDiagram);
+
+    //-//
+
+    // find the opposite gate using the 'opposite' property
+    let oppositeName = logic[index].opposite;
+    let oppositeIndex = findIndexByName(logic, oppositeName);
+
+    //-//
+
+    let topalianOppositeDiagram = ce('img');
+    topalianOppositeDiagram.id = 'topalianOppositeDiagram';
+    if (online == false)
+    {
+        topalianOppositeDiagram.src = logic[oppositeIndex].imgSrcOffline;
+    }
+    else
+    {
+        topalianOppositeDiagram.src = logic[oppositeIndex].imgSrcOnline;
+    }
+    topalianOppositeDiagram.style.position = 'absolute';
+    topalianOppositeDiagram.style.left = '435px';
+    topalianOppositeDiagram.style.top = '315px';
+    topalianOppositeDiagram.style.width = '115px';
+    ba(topalianOppositeDiagram);
 }
 
 //----//
