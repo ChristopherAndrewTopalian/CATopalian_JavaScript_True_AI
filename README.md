@@ -3,6 +3,8 @@ A JavaScript application that shows the 16 logic gates required to create True A
 
 USE APP: https://christopherandrewtopalian.github.io/CATopalian_JavaScript_True_AI/CATopalian_JavaScript_True_AI.html
 
+![screenshot_001](src/media/textures/screenshots/001.PNG)
+
 If you enjoy my apps and tutorials please consider buying me a coffee at [paypal.me/keystonermarch](https://www.paypal.com/paypalme/keystonermarch)
 
 ---
