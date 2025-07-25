@@ -2,11 +2,9 @@
 
 function gateCi(a, b)
 {
-    if ((a == 0 && b == 0) ||
-        (a == 1 && b == 0) ||
-        (a == 1 && b == 1))
+    if (a == 1 || b == 0)
     {
-        return 1;
+        return "Both False or A True or Both True";
     }
     else
     {
