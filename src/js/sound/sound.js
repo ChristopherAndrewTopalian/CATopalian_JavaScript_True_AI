@@ -40,7 +40,7 @@ function hoverSound()
         300,     // frequency
         100,     // duration
         'triangle',  // waveType
-        0.04,      // volume
+        0.02,      // volume
         0,       // detune
         0.05,      // attackTime
         0.05,      // releaseTime
@@ -54,7 +54,7 @@ function clickSound()
         300,     // frequency
         200,     // duration
         'sine',  // waveType
-        0.1,      // volume
+        0.05,      // volume
         0,       // detune
         0.2,      // attackTime
         0.2,      // releaseTime
@@ -149,7 +149,7 @@ function inputSound()
 //----//
 
 // Dedicated to God the Father
-// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2025
+// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026
 // https://github.com/ChristopherTopalian
 // https://github.com/ChristopherAndrewTopalian
 // https://sites.google.com/view/CollegeOfScripting

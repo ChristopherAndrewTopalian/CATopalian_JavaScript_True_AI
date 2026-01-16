@@ -7,8 +7,9 @@ function makeLogicGateButtons()
     logicButtonsDiv.className = "logicButtonsDiv";
     logicButtonsDiv.style.position = 'absolute';
     logicButtonsDiv.style.left = '180px';
-    logicButtonsDiv.style.top = '27px';
-    logicButtonsDiv.style.width = '375px';
+    logicButtonsDiv.style.top = '70px';
+    //logicButtonsDiv.style.width = '375px';
+    logicButtonsDiv.style.zIndex = 1000;
     ba(logicButtonsDiv);
 
     //-//
@@ -16,10 +17,10 @@ function makeLogicGateButtons()
     for (let x = 0; x < logic.length; x++)
     {
         let logicGateButton = ce("button");
-        logicGateButton.innerHTML = logic[x].name;
+        logicGateButton.textContent = logic[x].nameShort;
         logicGateButton.id = "logicGateButton" + logic[x].name;
         logicGateButton.className = "logicGateButton";
-
+        logicGateButton.style.alignSelf = 'flex-start';
         logicGateButton.onclick = function()
         {
             clickSound();
@@ -37,7 +38,7 @@ function makeLogicGateButtons()
 //----//
 
 // Dedicated to God the Father
-// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2025
+// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026
 // https://github.com/ChristopherTopalian
 // https://github.com/ChristopherAndrewTopalian
 // https://sites.google.com/view/CollegeOfScripting

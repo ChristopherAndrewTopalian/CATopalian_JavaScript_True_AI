@@ -4,6 +4,7 @@ let logic =
 [
     {
         name: "And",
+        nameShort: 'AND',
         imgSrcOffline: 'src/media/textures/topalianDiagrams/and.png',
         imgSrcOnline: 'https://collegeofscripting.weebly.com/uploads/6/4/4/8/64482293/and_orig.png',
         function: "gateAnd(a, b)",
@@ -21,6 +22,7 @@ let logic =
 
     {
         name: "Nand",
+        nameShort: 'NAND',
         imgSrcOffline: 'src/media/textures/topalianDiagrams/nand.png',
         imgSrcOnline: 'https://collegeofscripting.weebly.com/uploads/6/4/4/8/64482293/nand_orig.png',
         function: "gateNand(a, b)",
@@ -38,6 +40,7 @@ let logic =
 
     {
         name: "Or",
+        nameShort: 'OR',
         imgSrcOffline: 'src/media/textures/topalianDiagrams/or.png',
         imgSrcOnline: 'https://collegeofscripting.weebly.com/uploads/6/4/4/8/64482293/or_orig.png',
         function: "gateOr(a, b)",
@@ -55,6 +58,7 @@ let logic =
 
     {
         name: "Nor",
+        nameShort: 'NOR',
         imgSrcOffline: 'src/media/textures/topalianDiagrams/nor.png',
         imgSrcOnline: 'https://collegeofscripting.weebly.com/uploads/6/4/4/8/64482293/nor_orig.png',
         function: "gateNor(a, b)",
@@ -72,6 +76,7 @@ let logic =
 
     {
         name: "Xor",
+        nameShort: 'XOR',
         imgSrcOffline: 'src/media/textures/topalianDiagrams/xor.png',
         imgSrcOnline: 'https://collegeofscripting.weebly.com/uploads/6/4/4/8/64482293/xor_orig.png',
         function: "gateXor(a, b)",
@@ -89,6 +94,7 @@ let logic =
 
     {
         name: "Xnor",
+        nameShort: 'XNOR',
         imgSrcOffline: 'src/media/textures/topalianDiagrams/xnor.png',
         imgSrcOnline: 'https://collegeofscripting.weebly.com/uploads/6/4/4/8/64482293/xnor_orig.png',
         function: "gateXnor(a, b)",
@@ -106,6 +112,7 @@ let logic =
 
     {
         name: "Converse Implication",
+        nameShort: 'CI',
         imgSrcOffline: 'src/media/textures/topalianDiagrams/converse_implication.png',
         imgSrcOnline: 'https://collegeofscripting.weebly.com/uploads/6/4/4/8/64482293/converse-implication_orig.png',
         function: "gateCi(a, b)",
@@ -123,6 +130,7 @@ let logic =
 
     {
         name: "Converse NonImplication",
+        nameShort: 'CNI',
         imgSrcOffline: 'src/media/textures/topalianDiagrams/converse_non_implication.png',
         imgSrcOnline: 'https://collegeofscripting.weebly.com/uploads/6/4/4/8/64482293/converse-non-implication_orig.png',
         function: "gateCni(a, b)",
@@ -140,6 +148,7 @@ let logic =
 
     {
         name: "Material Implication",
+        nameShort: 'MI',
         imgSrcOffline: 'src/media/textures/topalianDiagrams/material_implication.png',
         imgSrcOnline: 'https://collegeofscripting.weebly.com/uploads/6/4/4/8/64482293/material-implication_orig.png',
         function: "gateMi(a, b)",
@@ -157,6 +166,7 @@ let logic =
 
     {
         name: "Material NonImplication",
+        nameShort: 'MNI',
         imgSrcOffline: 'src/media/textures/topalianDiagrams/material_non_implication.png',
         imgSrcOnline: 'https://collegeofscripting.weebly.com/uploads/6/4/4/8/64482293/material-non-implication_orig.png',
         function: "gateMni(a, b)",
@@ -174,6 +184,7 @@ let logic =
 
     {
         name: "Right Projection",
+        nameShort: 'RP',
         imgSrcOffline: 'src/media/textures/topalianDiagrams/right_projection.png',
         imgSrcOnline: 'https://collegeofscripting.weebly.com/uploads/6/4/4/8/64482293/right-projection_orig.png',
         function: "gateRp(a, b)",
@@ -191,6 +202,7 @@ let logic =
 
     {
         name: "Right Complementation",
+        nameShort: 'RC',
         imgSrcOffline: 'src/media/textures/topalianDiagrams/right_complementation.png',
         imgSrcOnline: 'https://collegeofscripting.weebly.com/uploads/6/4/4/8/64482293/right-complementation_orig.png',
         function: "gateRc(a, b)",
@@ -208,6 +220,7 @@ let logic =
 
     {
         name: "Left Projection",
+        nameShort: 'LP',
         imgSrcOffline: 'src/media/textures/topalianDiagrams/left_projection.png',
         imgSrcOnline: 'https://collegeofscripting.weebly.com/uploads/6/4/4/8/64482293/left-projection_orig.png',
         function: "gateLp(a, b)",
@@ -225,6 +238,7 @@ let logic =
 
     {
         name: "Left Complementation",
+        nameShort: 'LC',
         imgSrcOffline: 'src/media/textures/topalianDiagrams/left_complementation.png',
         imgSrcOnline: 'https://collegeofscripting.weebly.com/uploads/6/4/4/8/64482293/left-complementation_orig.png',
         function: "gateLc(a, b)",
@@ -242,6 +256,7 @@ let logic =
 
     {
         name: "Tautology",
+        nameShort: 'TAU',
         imgSrcOffline: 'src/media/textures/topalianDiagrams/tautology.png',
         imgSrcOnline: 'https://collegeofscripting.weebly.com/uploads/6/4/4/8/64482293/tautology_orig.png',
         function: "gateTautology(a, b)",
@@ -259,6 +274,7 @@ let logic =
 
     {
         name: "Contradiction",
+        nameShort: 'CONTRA',
         imgSrcOffline: 'src/media/textures/topalianDiagrams/contradiction.png',
         imgSrcOnline: 'https://collegeofscripting.weebly.com/uploads/6/4/4/8/64482293/contradiction_orig.png',
         function: "gateContradiction(a, b)",
@@ -279,7 +295,7 @@ let logic =
 //----//
 
 // Dedicated to God the Father
-// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2025
+// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026
 // https://github.com/ChristopherTopalian
 // https://github.com/ChristopherAndrewTopalian
 // https://sites.google.com/view/CollegeOfScripting

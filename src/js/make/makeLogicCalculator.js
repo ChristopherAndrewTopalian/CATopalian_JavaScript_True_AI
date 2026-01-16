@@ -14,7 +14,7 @@ function makeLogicCalculator(whichItem)
     logicCalcDiv.className = "logicCalcDiv";
     logicCalcDiv.style.position = 'absolute';
     logicCalcDiv.style.left = '10px';
-    logicCalcDiv.style.top = '5px';
+    logicCalcDiv.style.top = '30px';
     logicCalcDiv.style.display = 'flex';
     logicCalcDiv.style.flexDirection = 'column';
     ba(logicCalcDiv);
@@ -44,7 +44,7 @@ function makeLogicCalculator(whichItem)
     textBox001.type = 'text';
     textBox001.id = "textBox001";
     textBox001.placeholder = "A";
-    textBox001.style.width = '50px';
+    textBox001.style.width = '30px';
     textBox001.style.marginRight = '3px';
     textBox001.onkeyup = function()
     {
@@ -64,7 +64,7 @@ function makeLogicCalculator(whichItem)
     textBox002.type = 'text';
     textBox002.id = "textBox002";
     textBox002.placeholder = "B";
-    textBox002.style.width = '50px';
+    textBox002.style.width = '30px';
     textBox002.onkeyup = function()
     {
         let a = textBox001.value;
@@ -86,7 +86,7 @@ function makeLogicCalculator(whichItem)
     let textBoxResult = ce("textarea");
     textBoxResult.id = "textBoxResult";
     textBoxResult.placeholder = "Result";
-    textBoxResult.style.width = '150px';
+    textBoxResult.style.width = '100px';
     textBoxResult.onchange = function()
     {
         if (ge('textBoxResult').value == 0)
@@ -107,7 +107,7 @@ function makeLogicCalculator(whichItem)
     truthTableAbbreviated.id = 'truthTableAbbreviated';
     truthTableAbbreviated.style.position = 'absolute';
     truthTableAbbreviated.style.left = '126px'
-    truthTableAbbreviated.style.top = '40px';
+    truthTableAbbreviated.style.top = '65px';
     truthTableAbbreviated.style.color = 'rgb(150, 150, 150)';
     if (ge('truthTableAbbreviated'))
     {
@@ -121,8 +121,8 @@ function makeLogicCalculator(whichItem)
     truthTableComplete.innerHTML = '<pre>' + logic[findIndexByName(logic, whichItem)].truthTableFormatted + '</pre>';
     truthTableComplete.id = 'truthTableComplete';
     truthTableComplete.style.position = 'absolute';
-    truthTableComplete.style.left = '-30px'
-    truthTableComplete.style.top = '151px';
+    truthTableComplete.style.left = '-70px'
+    truthTableComplete.style.top = '152px';
     truthTableComplete.style.color = 'rgb(150, 150, 150)';
     if (ge('truthTableComplete'))
     {
@@ -136,8 +136,8 @@ function makeLogicCalculator(whichItem)
     booleanLogicGate.innerHTML = logic[findIndexByName(logic, whichItem)].formula;
     booleanLogicGate.id = 'booleanLogicGate';
     booleanLogicGate.style.position = 'absolute';
-    booleanLogicGate.style.left = '25px'
-    booleanLogicGate.style.top = '310px';
+    booleanLogicGate.style.left = '20px'
+    booleanLogicGate.style.top = '295px';
     booleanLogicGate.style.width = '400px';
     booleanLogicGate.style.color = 'rgb(0, 255, 255)';
     if (ge('booleanLogicGate'))
@@ -178,8 +178,8 @@ function makeLogicCalculator(whichItem)
         topalianDiagram.src = logic[index].imgSrcOnline;
     }
     topalianDiagram.style.position = 'absolute';
-    topalianDiagram.style.left = '435px';
-    topalianDiagram.style.top = '200px';
+    topalianDiagram.style.left = '310px';
+    topalianDiagram.style.top = '30px';
     topalianDiagram.style.width = '115px';
     ba(topalianDiagram);
 
@@ -202,8 +202,8 @@ function makeLogicCalculator(whichItem)
         topalianOppositeDiagram.src = logic[oppositeIndex].imgSrcOnline;
     }
     topalianOppositeDiagram.style.position = 'absolute';
-    topalianOppositeDiagram.style.left = '435px';
-    topalianOppositeDiagram.style.top = '315px';
+    topalianOppositeDiagram.style.left = '310px';
+    topalianOppositeDiagram.style.top = '150px';
     topalianOppositeDiagram.style.width = '115px';
     ba(topalianOppositeDiagram);
 }
@@ -211,7 +211,7 @@ function makeLogicCalculator(whichItem)
 //----//
 
 // Dedicated to God the Father
-// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2025
+// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026
 // https://github.com/ChristopherTopalian
 // https://github.com/ChristopherAndrewTopalian
 // https://sites.google.com/view/CollegeOfScripting
